@@ -10,10 +10,6 @@ class Zerg(BaseModel):
     birstday : datetime.date
     fangs : int
 
-class Put_Zerg(BaseModel):
-    name : str
-    fangs : int
-
 zergs = []
 
 @app.get("/zergs", response_model=list[Zerg])
