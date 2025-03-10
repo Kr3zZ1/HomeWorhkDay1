@@ -32,7 +32,7 @@ def put_zerg(index: int, zerg: Zerg):
 def delete_zerg(index: int):
     if index < 0 or index >= len(zergs):
         raise HTTPException(status_code=404, detail="Zerg not found")
-    deleted_zerg = zergs.pop(index)  # Удаление элемента по индексу
+    deleted_zerg = zergs.pop(index)
     return deleted_zerg
 
 if __name__ == "__main__":
